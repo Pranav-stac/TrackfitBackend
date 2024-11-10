@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pose Comparison</title>
+</head>
+<body>
+    <h1>Upload Image for Pose Comparison</h1>
+    <form action="{% url 'compare_pose' %}" method="post" enctype="multipart/form-data">
+        <label for="pose_name">Pose Name:</label>
+        <input type="text" name="pose_name" required><br><br>
+        <button type="submit">Compare Pose</button>
+    </form>
+</body>
+</html>
