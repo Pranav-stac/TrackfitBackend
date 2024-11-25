@@ -221,7 +221,7 @@ def pose_comparison(pose_name):
         return overall_similarity, angle_similarities
 
     def load_reference_pose(pose_name):
-        dataset_path = r'C:\Users\aniru\Downloads\Fitness-Recommendation-System-master\dataset'
+        dataset_path = r'dataset'
         pose_path = os.path.join(dataset_path, pose_name)
         if not os.path.exists(pose_path):
             print(f"Error: Folder for '{pose_name}' not found.")
